@@ -1,0 +1,14 @@
+.method{
+  position: relative;
+  overflow: hidden;
+  &:has(input:checked){
+    border-color: var(--bs-navbar-active-color);
+    color: var(--bs-navbar-active-color);
+  }
+  &__radio{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1;
+    left: -999px;
+  }
+}

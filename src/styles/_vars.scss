@@ -3,5 +3,7 @@
   --content-header-height: 45px;
 
   // bootstrap
-
+  --bs-navbar-active-color: var(--bs-link-color);
+  --bs-btn-active-color: var(--bs-link-color);
+  --bs-btn-hover-color: var(--bs-link-hover-color);
 }

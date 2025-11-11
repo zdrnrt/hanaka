@@ -2,4 +2,8 @@
 @import './vars';
 
 // shared
-@import './shared/_header.scss';
+@import './shared/_header';
+
+// pages
+
+@import './pages/_balance';

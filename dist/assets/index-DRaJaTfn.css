@@ -1,0 +1,45 @@
+.content {
+  height: calc(100vh - var(--header-height));
+}
+.content__header {
+  height: var(--content-header-height);
+}
+.content__row {
+  height: calc(100% - var(--content-header-height));
+}
+
+.nav-link:hover {
+  color: var(--bs-link-hover-color);
+}
+
+.navbar-brand:hover {
+  color: var(--bs-link-hover-color);
+}
+
+:root {
+  --header-height: 42px;
+  --content-header-height: 45px;
+  --bs-navbar-active-color: var(--bs-link-color);
+  --bs-btn-active-color: var(--bs-link-color);
+  --bs-btn-hover-color: var(--bs-link-hover-color);
+}
+
+.header {
+  height: var(--header-height);
+  line-height: 1;
+}
+
+.method {
+  position: relative;
+  overflow: hidden;
+}
+.method:has(input:checked) {
+  border-color: var(--bs-navbar-active-color);
+  color: var(--bs-navbar-active-color);
+}
+.method__radio {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1;
+  left: -999px;
+}

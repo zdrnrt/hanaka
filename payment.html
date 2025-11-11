@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Агентство недвижимости Hanaka</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <header class="header py-2 container-fluid border-bottom bg-body-secondary">
+      <div class="container h-100 d-flex align-items-center">
+        <button class="navbar-toggler d-md-none mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Открыть навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="navbar-brand">Hanaka</a>
+      </div>
+    </header>
+    <div class="container-fluid flex-grow-1 pt-3 content">
+      <div class="container h-100">
+        <header class="content__header pb-3 border-bottom">
+          <h2 class="h4 m-0">Личный кабинет</h2>
+        </header>
+        <div class="content__row row">
+          <aside class="col-md-2 h-100 pt-2 pb-3 overflow-auto" id="navbar">
+            <nav class="navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link" aria-current="page">Мой кабинет</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Объявления</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./payment.html" class="nav-link active">Личный счет</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Продвижение</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Личные данные</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./change-password.html" class="nav-link">Смена пароля</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <main class="col-md-10 h-100 pt-2 pb-3 border-start overflow-auto">
+            <h1 class="mb-3">Личный счет</h1>
+            <div class="mb-4">
+              <p class="form-label text-secondary">Состояние счета</p>
+              <div class="h2">41 000 ₽</div>
+            </div>
+            <form action="#" class="payment mb-4">
+              <h2 class="h4 mb-2">Пополнение счета</h2>
+              <div class="mb-2">
+                <p class="form-label text-secondary">Фиксированный платеж</p>
+                <div class="d-flex gap-2">
+                  <button class="pay btn bg-body-tertiary" data-value="100" type="button">
+                    <span class="pay__title">100</span>
+                  </button>
+                  <button class="pay btn bg-body-tertiary" data-value="200" type="button">
+                    <span class="pay__title">200</span>
+                  </button>
+                  <button class="pay btn bg-body-tertiary" data-value="500" type="button">
+                    <span class="pay__title">500</span>
+                  </button>
+                  <button class="pay btn bg-body-tertiary" data-value="1000" type="button">
+                    <span class="pay__title">1000</span>
+                  </button>
+                  <button class="pay btn bg-body-tertiary" data-value="5000" type="button">
+                    <span class="pay__title">5000</span>
+                  </button>
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="sum" class="form-label d-block text-secondary">Сумма</label>
+                <input id="sum" name="sum" type="number" class="form-control">
+              </div>
+              <div class="mb-4">
+                <p class="form-label text-secondary">Метод оплаты</p>
+                <div class="d-flex gap-2">
+                  <label class="method btn bg-body-tertiary">
+                    <input type="radio" name="method" value="Наличные" class="method__radio">
+                    <img src="#" alt="" class="method__title" />
+                    <span class="method__title">Наличные</span>
+                  </label>
+                  <label class="method btn bg-body-tertiary">
+                    <input type="radio" name="method" value="ЮKassa" class="method__radio">
+                    <img src="#" alt="" class="method__title" />
+                    <span class="method__title">ЮKassa</span>
+                  </label>
+                  <label class="method btn bg-body-tertiary">
+                    <input type="radio" name="method" value="Visa" class="method__radio">
+                    <img src="#" alt="" class="method__title" />
+                    <span class="method__title">Visa</span>
+                  </label>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="submit">Пополнить</button>
+            </form>
+            <div>
+              <h2 class="h4 mb-2">История транзакций</h2>
+              <table class="table table-striped border-top">
+                <thead>
+                  <tr>
+                    <th>Дата транзакции</th>
+                    <th>Пользователь</th>
+                    <th>Сумма</th>
+                    <th>Заказ</th>
+                    <th>Тип</th>
+                    <th>Описание</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><time>10.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>1</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><time>11.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>2</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><time>12.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>2</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><time>13.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>3</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><time>14.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>4</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><time>15.10.2025</time></td>
+                    <td>User</td>
+                    <td>1 000</td>
+                    <td>5</td>
+                    <td>Оплата заказа</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="/src/index.js"></script>
+</body>
+
+</html>
