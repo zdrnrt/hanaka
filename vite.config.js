@@ -8,6 +8,8 @@ export default {
       input: {
         main: resolve(__dirname, 'index.html'),
         payment: resolve(__dirname, 'payment.html'),
+        changePassword: resolve(__dirname, 'change-password.html'),
+        personal: resolve(__dirname, 'personal.html'),
       },
       output: {
         compact: false
