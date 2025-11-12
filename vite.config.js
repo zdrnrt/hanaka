@@ -10,6 +10,7 @@ export default {
         payment: resolve(__dirname, 'payment.html'),
         changePassword: resolve(__dirname, 'change-password.html'),
         personal: resolve(__dirname, 'personal.html'),
+        promotion: resolve(__dirname, 'promotion.html'),
       },
       output: {
         compact: false
