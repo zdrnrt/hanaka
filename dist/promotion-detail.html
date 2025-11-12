@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="./favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Агентство недвижимости Hanaka</title>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script type="module" src="./assets/index-BJuMi0tm.js"></script>
+  <link rel="stylesheet" href="./assets/index-DuQycxR0.css">
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <header class="header py-2 container-fluid border-bottom  bg-body-secondary">
+      <div class="container h-100 d-flex align-items-center">
+        <button class="navbar-toggler d-md-none mr-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Открыть навигацию">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/" class="navbar-brand">Hanaka</a>
+      </div>
+    </header>
+    <div class="container-fluid flex-grow-1 pt-3 content">
+      <div class="container h-100">
+        <header class="content__header pb-3 border-bottom">
+          <h2 class="h4 m-0">Личный кабинет</h2>
+        </header>
+        <div class="content__row row">
+          <aside class="col-md-2 h-100 pt-2 pb-3 overflow-auto" id="navbar">
+            <nav class="navbar-collapse h-100 border-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link active" aria-current="page">Мой кабинет</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Объявления</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./payment.html" class="nav-link">Личный счет</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./promotion.html" class="nav-link">Продвижение</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Личные данные</a>
+                </li>
+                <li class="nav-item">
+                  <a href="./change-password.html" class="nav-link">Смена пароля</a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <main class="col-md-10 h-100 pt-2 pb-3 overflow-auto">
+            <h1 class="mb-3">Рекламная компания</h1>
+            <form action="#">
+              <!-- <h2 class="h4 mb-3">Рекламные компании</h2> -->
+              <div class="mb-3">
+                <div class="input-suggest"></div>
+                <label for="house" class="form-label d-block text-secondary">Объект</label>
+                <input id="house" name="house" type="text" class="form-control" list="objects-list">
+                <datalist id="objects-list">
+                  <option value="Дом 2-х комнатный"></option>
+                  <option value="Квартира 2-х комнатный"></option>
+                  <option value="Дом на патриках"></option>
+                </datalist>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-4">
+                  <label class="form-label d-block text-secondary">Выберите место размещения</label>
+                  <select class="form-select">
+                    <option value="main">На главной</option>
+                    <option value="detail">На странице объявлений</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label d-block text-secondary">Срок размещения</label>
+                  <select class="form-select" name="time">
+                    <option value="week">На неделю</option>
+                    <option value="month">На месяц</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-label d-block text-secondary">Статус рекламной компании</div>
+                  <div class="d-flex gap-2">
+                    <label class="method btn bg-body-tertiary text-start">
+                      <input type="radio" name="status" value="pause" class="method__radio">
+                      <span class="method__title">На паузе</span>
+                    </label>
+                    <label class="method btn bg-body-tertiary text-start">
+                      <input type="radio" name="status" value="active" class="method__radio">
+                      <span class="method__title">Активен</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="text-end">
+                <button class="btn btn-primary" type="submit">Сохранить</button>
+              </div>
+            </form>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

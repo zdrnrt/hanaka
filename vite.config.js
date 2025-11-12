@@ -11,6 +11,7 @@ export default {
         changePassword: resolve(__dirname, 'change-password.html'),
         personal: resolve(__dirname, 'personal.html'),
         promotion: resolve(__dirname, 'promotion.html'),
+        promotionDetail: resolve(__dirname, 'promotion-detail.html'),
       },
       output: {
         compact: false
