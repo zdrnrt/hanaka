@@ -30,7 +30,7 @@
             <nav class="navbar-collapse h-100 border-end">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active" aria-current="page">Мой кабинет</a>
+                  <a href="./index.html" class="nav-link">Мой кабинет</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Объявления</a>
@@ -39,7 +39,7 @@
                   <a href="./payment.html" class="nav-link">Личный счет</a>
                 </li>
                 <li class="nav-item">
-                  <a href="./promotion.html" class="nav-link">Продвижение</a>
+                  <a href="./promotion.html" class="nav-link active" aria-current="page">Продвижение</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">Личные данные</a>
@@ -57,12 +57,11 @@
               <div class="mb-3">
                 <div class="input-suggest"></div>
                 <label for="house" class="form-label d-block text-secondary">Объект</label>
-                <input id="house" name="house" type="text" class="form-control" list="objects-list">
-                <datalist id="objects-list">
-                  <option value="Дом 2-х комнатный"></option>
-                  <option value="Квартира 2-х комнатный"></option>
-                  <option value="Дом на патриках"></option>
-                </datalist>
+                <input id="house" name="house" type="text" class="form-control js-search-house" 
+                >
+                <div class="bg-body border d-flex flex-column js-search-house-dropdown position-absolute w-100 z-1 d-none">
+                  
+                </div>
               </div>
               <div class="row mb-4">
                 <div class="col-md-4">
